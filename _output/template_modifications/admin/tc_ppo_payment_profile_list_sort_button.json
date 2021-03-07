@@ -1,0 +1,9 @@
+{
+    "template": "payment_profile_list",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "</xf:pageaction>\n",
+    "replace": "<xf:button href=\"{{ link('payment-profiles/sort') }}\" icon=\"sort\" overlay=\"true\">{{ phrase('sort') }}</xf:button>\n$0"
+}

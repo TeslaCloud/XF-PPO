@@ -1,0 +1,9 @@
+{
+    "template": "payment_profile_edit",
+    "description": "",
+    "execution_order": 10,
+    "enabled": true,
+    "action": "str_replace",
+    "find": "<hr class=\"formRowSep\" />",
+    "replace": "<xf:macro template=\"display_order_macros\" name=\"row\"\n\t\t  arg-name=\"display_order\"\n\t\t  arg-value=\"{$profile.display_order}\"\n\t\t  arg-explain=\"{{ phrase('position_of_this_item_relative_to_other_nodes_with_same_parent') }}\" />\n$0"
+}

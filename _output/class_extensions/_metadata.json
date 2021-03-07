@@ -1,0 +1,11 @@
+{
+    "XF-Admin-Controller-PaymentProfile_TC-PPO-XF-Admin-Controller-PaymentProfile.json": {
+        "hash": "d0c591b057cd3b4f5281a187cf7a6d26"
+    },
+    "XF-Entity-PaymentProfile_TC-PPO-XF-Entity-PaymentProfile.json": {
+        "hash": "97ee3027c8f2c52e9179aa232fa040b6"
+    },
+    "XF-Repository-Payment_TC-PPO-XF-Repository-Payment.json": {
+        "hash": "d31a91f9863f1b5996b5540c6a82b1d1"
+    }
+}

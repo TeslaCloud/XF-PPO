@@ -1,0 +1,28 @@
+<xf:title>{{ phrase('tc_ppo_sort_payment_profiles') }}</xf:title>
+
+<xf:macro template="public:nestable_macros" name="setup" />
+
+<xf:form action="{{ link('payment-profiles/sort') }}" class="block" ajax="true">
+	<div class="block-container">
+		<div class="block-body">
+			<div class="nestable-container" data-xf-init="nestable" data-max-depth="1" data-value-function="serialize">
+				<xf:macro name="paymentProfiles_list" arg-paymentProfiles="{$paymentProfiles}" />
+				<xf:hiddenval name="paymentProfiles" value="" />
+			</div>
+		</div>
+		<xf:submitrow icon="save" rowtype="simple" />
+	</div>
+</xf:form>
+
+<xf:macro name="paymentProfiles_list" arg-paymentProfiles="!">
+	<ol class="nestable-list">
+		<xf:foreach loop="$paymentProfiles" key="$id" value="$paymentProfile">
+			<li class="nestable-item" data-id="{$id}">
+				<div class="nestable-handle" aria-label="{{ phrase('drag_handle')|for_attr }}"><xf:fa icon="fa-bars" /></div>
+				<div class="nestable-content">
+					{$paymentProfile.title}
+				</div>
+			</li>
+		</xf:foreach>
+	</ol>
+</xf:macro>

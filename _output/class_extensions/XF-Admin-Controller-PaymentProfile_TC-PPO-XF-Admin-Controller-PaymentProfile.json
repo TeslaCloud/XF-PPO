@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\Admin\\Controller\\PaymentProfile",
+    "to_class": "TC\\PPO\\XF\\Admin\\Controller\\PaymentProfile",
+    "execute_order": 10,
+    "active": true
+}

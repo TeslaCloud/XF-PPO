@@ -1,0 +1,6 @@
+{
+    "from_class": "XF\\Repository\\Payment",
+    "to_class": "TC\\PPO\\XF\\Repository\\Payment",
+    "execute_order": 10,
+    "active": true
+}
